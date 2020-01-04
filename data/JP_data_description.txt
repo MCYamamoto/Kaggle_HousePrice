@@ -1,0 +1,523 @@
+MSSubClass：販売に関係する住居のタイプを識別します。
+
+        20 1ストーリー1946以降のすべてのスタイル
+        30 1ストーリー1945＆古い
+        40 1ストーリーW / FINISHED ATTIC ALL AGES
+        45 1-1 / 2ストーリー-未完の全年齢
+        50 1-1 / 2ストーリーはすべての時代を終えた
+        60 2ストーリー1946以降
+        70 2ストーリー1945＆古い
+        75 2-1 / 2全年齢層のストーリー
+        80分割またはマルチレベル
+        85スプリットホイヤー
+        90デュプレックス-すべてのスタイルと年齢
+       120 1ストーリーPUD（計画的ユニット開発）-1946以降
+       150 1-1 / 2ストーリーPUD-すべての年齢
+       160 2ストーリーPUD-1946以降
+       180 PUD-マルチレベル-スプリットレフ/フォイヤーを含む
+       190 2ファミリーコンバージョン-すべてのスタイルと年齢
+
+MSZoning：販売の一般的なゾーニング分類を識別します。
+
+       農業
+       Cコマーシャル
+       FVフローティングビレッジレジデンシャル
+       私は産業
+       RH住宅用高密度
+       RL住宅用低密度
+       RPレジデンシャルローデンシティパーク
+       RM住宅中密度
+
+LotFrontage：資産に接続された通りの直線フィート
+
+LotArea：敷地面積.平方フィート単位のロットサイズ
+
+通り：資産への道路アクセスのタイプ
+
+       Grvl 砂利
+       舗装　舗装
+       
+路地：資産への路地アクセスのタイプ
+
+       Grvl 砂利
+       舗装舗装
+       NA路地へのアクセスなし
+
+LotShape：資産の一般的な形状
+
+       レギュラー
+       IR1やや不規則
+       IR2中程度に不規則
+       IR3不規則
+       
+LandContour：資産の平坦度
+
+       Lvl Near Flat / Level
+       Bnk Banked-ストリートグレードからビルへの迅速かつ大幅な増加
+       HLSヒルサイド-左右に大きな勾配
+       低うつ病
+
+ユーティリティ：利用可能なユーティリティの種類
+
+       AllPubすべての公益事業（E、G、W、S）
+       NoSewr電気、ガス、水（浄化槽）
+       NoSeWa電気とガスのみ
+       ELO電気のみ
+
+LotConfig：ロット構成
+
+       インサイドインサイドロット
+       コーナーコーナー
+       CulDSac Cul-de-sac
+       不動産の2つの側面のFR2間口
+       FR3資産の3つの側面の正面
+
+LandSlope：資産の勾配
+
+       Gtlジェントルスロープ
+       Mod中程度の勾配
+       Sev Severe Slope
+
+近所：エイムス市域内の物理的な場所
+
+       Blmngtnブルーミントンハイツ
+       ブルーステブルーステム
+       BrDale Briardale
+       BrkSide Brookside
+       ClearCrクリアクリーク
+       CollgCr College Creek
+       Crawfor Crawford
+       エドワーズ・エドワーズ
+       ギルバートギルバート
+       IDOTRRアイオワドットアンドレイルロード
+       MeadowV Meadow Village
+       ミッチェル・ミッチェル
+       North Amesの名前
+       ノーリッジノースリッジ
+       NPkVill Northpark Villa
+       NridgHt Northridge Heights
+       NWAmes Northwest Ames
+       オールドタウン旧市街
+       アイオワ州立大学のSWISUサウス＆ウエスト
+       ソーヤーソーヤー
+       SawyerW Sawyer West
+       サマセットサマセット
+       StoneBr Stone Brook
+       ティンバーランド
+       ヴィーンカーヴィーンカー
+
+条件1：さまざまな条件への近接
+
+       幹線道路に隣接する動脈
+       フィーダー通りに隣接するフィーダー
+       標準
+       北南鉄道の200 '以内のRRNn
+       RR南北鉄道に隣接
+       PosNほぼ正のオフサイト機能-公園、グリーンベルトなど
+       PosAポストオフサイト機能に隣接
+       東西鉄道の200 '以内のRRNe
+       東西鉄道に隣接するRRAe
+
+条件2：さまざまな条件への近接性（複数ある場合）
+
+       幹線道路に隣接する動脈
+       フィーダー通りに隣接するフィーダー
+       標準
+       北南鉄道の200 '以内のRRNn
+       RR南北鉄道に隣接
+       PosNほぼ正のオフサイト機能-公園、グリーンベルトなど
+       PosAポストオフサイト機能に隣接
+       東西鉄道の200 '以内のRRNe
+       東西鉄道に隣接するRRAe
+
+BldgType：住居のタイプ
+
+       1家族一戸建て
+       2FmCon 2ファミリ変換。もともと一世帯住宅として建てられた
+       デュプレックスデュプレックス
+       TwnhsEタウンハウスエンドユニット
+       TwnhsIタウンハウスインサイドユニット
+
+HouseStyle：住まいのスタイル
+
+       1ストーリー1ストーリー
+       1.5Fin 1.5話：第2レベル終了
+       1.5Unf 1.5ストーリー：第2レベル未完
+       2ストーリー2ストーリー
+       2.5Fin 2.5話：第2レベル終了
+       2.5Unf 2半話：2レベル未完
+       SFoyerスプリットホワイエ
+       SLvlスプリットレベル
+
+OverallQual：全体の素材と家の仕上げを評価します
+
+       10とても良い
+       9すばらしい
+       8とても良い
+       7良い
+       6平均以上
+       5平均
+       4平均以下
+       3フェア
+       2悪い
+       1非常に悪い
+
+OverallCond：家の全体的な状態を評価します
+
+       10とても良い
+       9すばらしい
+       8とても良い
+       7良い
+       6平均以上
+       5平均
+       4平均以下
+       3フェア
+       2悪い
+       1非常に悪い
+
+YearBuilt：元の建設日
+
+YearRemodAdd：改造日（改造や追加がない場合は建設日と同じ）
+
+RoofStyle：屋根のタイプ
+
+       フラットフラット
+       ゲーブルゲーブル
+       Gambrel Gabrel（納屋）
+       ヒップヒップ
+       マンサードマンサード
+       小屋小屋
+
+RoofMatl：屋根材
+
+       ClyTile粘土またはタイル
+       CompShg標準（複合）シングル
+       膜メンブレン
+       メタルメタル
+       ロールロール
+       Tar＆Grv Gravel＆Tar
+       WdShake Wood Shakes
+       WdShnglウッド帯状疱疹
+
+Exterior1st：家の外装
+
+       AsbShngアスベスト帯状疱疹
+       AsphShnアスファルト帯状疱疹
+       BrkComm Brick Common
+       BrkFace Brick Face
+       CBlockシンダーブロック
+       CemntBdセメントボード
+       HdBoardハードボード
+       ImStuccイミテーションスタッコ
+       MetalSdメタルサイディング
+       その他その他
+       合板合板
+       プリキャストプリキャスト
+       ストーンストーン
+       スタッコスタッコ
+       VinylSdビニールサイディング
+       Wd Sdngウッドサイディング
+       WdShingウッドシングル
+
+Exterior2nd：家の外装（複数の素材の場合）
+
+       AsbShngアスベスト帯状疱疹
+       AsphShnアスファルト帯状疱疹
+       BrkComm Brick Common
+       BrkFace Brick Face
+       CBlockシンダーブロック
+       CemntBdセメントボード
+       HdBoardハードボード
+       ImStuccイミテーションスタッコ
+       MetalSdメタルサイディング
+       その他その他
+       合板合板
+       プリキャストプリキャスト
+       ストーンストーン
+       スタッコスタッコ
+       VinylSdビニールサイディング
+       Wd Sdngウッドサイディング
+       WdShingウッドシングル
+
+MasVnrType：石材突き板タイプ
+
+       BrkCmnブリックコモン
+       BrkFace Brick Face
+       CBlockシンダーブロック
+       なしなし
+       ストーンストーン
+
+MasVnrArea：平方フィートの石材突き板面積
+
+ExterQual：外装の素材の品質を評価します
+
+       Ex Excellent
+       グッドグッド
+       TA平均/標準
+       Fa Fair
+       悪い
+
+ExterCond：外装の素材の現在の状態を評価します
+
+       Ex Excellent
+       グッドグッド
+       TA平均/標準
+       Fa Fair
+       悪い
+
+基礎：基礎の種類
+
+       BrkTilブリック＆タイル
+       CBlockシンダーブロック
+       PConc Poured Contrete
+       スラブスラブ
+       ストーンストーン
+       ウッドウッド
+
+BsmtQual：地下室の高さを評価します
+
+       Ex Excellent（100インチ以上）
+       Gd Good（90-99インチ）
+       TA標準（80-89インチ）
+       Fa Fair（70-79インチ）
+       Po Poor（<70インチ
+       NA地下室なし
+
+BsmtCond：地下室の一般的な状態を評価します
+
+       Ex Excellent
+       グッドグッド
+       TA標準-わずかな湿気が許容される
+       Fa Fair-湿気または多少のひび割れまたは沈降
+       Po Poor-ひび割れ、沈降、または湿気
+       NA地下室なし
+
+BsmtExposure：ストライキまたは庭レベルの壁を指します
+
+       Gdの良い露出
+       Av平均露出（スプリットレベルまたはホイヤーは通常、平均以上のスコア）
+       Mn最小露出
+       露出なし
+       NA地下室なし
+
+BsmtFinType1：地下室完成エリアの評価
+
+       GLQグッドリビングクォーターズ
+       ALQ平均居住区
+       BLQが平均居住区未満
+       Rec Average Rec Room
+       LwQ低品質
+       Unf Unfinshed
+       NA地下室なし
+
+BsmtFinSF1：タイプ1完成した平方フィート
+
+BsmtFinType2：地下室完成エリアの評価（複数のタイプの場合）
+
+       GLQグッドリビングクォーターズ
+       ALQ平均居住区
+       BLQが平均居住区未満
+       Rec Average Rec Room
+       LwQ低品質
+       Unf Unfinshed
+       NA地下室なし
+
+BsmtFinSF2：タイプ2完成した平方フィート
+
+BsmtUnfSF：地下室の未完成の平方フィート
+
+TotalBsmtSF：地下室の総平方フィート
+
+加熱：加熱のタイプ
+
+       床床炉
+       GasAガス強制温風炉
+       GasWガス温水または蒸気熱
+       重力重力炉
+       OthWガス以外の温水または蒸気熱
+       壁壁炉
+
+HeatingQC：加熱品質と条件
+
+       Ex Excellent
+       グッドグッド
+       TA平均/標準
+       Fa Fair
+       悪い
+
+CentralAir：セントラルエアコン
+
+       Nいいえ
+       はい
+
+電気：電気システム
+
+       SBrkr標準サーキットブレーカーおよびRomex
+       FuseA 60 AMPを超えるヒューズボックスとすべてのRomex配線（平均）
+       FuseF 60 AMPヒューズボックスと主にRomex配線（公正）
+       FuseP 60 AMPヒューズボックスと大部分のノブとチューブの配線（不良）
+       ミックスミックス
+
+1stFlrSF：1階平方フィート
+ 
+2ndFlrSF：2階平方フィート
+
+LowQualFinSF：低品質の完成した平方フィート（すべてのフロア）
+
+GrLivArea：地上（地上）のリビングエリアの平方フィート
+
+BsmtFullBath：地下室のフルバスルーム
+
+BsmtHalfBath：地下半分のバスルーム
+
+FullBath：グレード以上のフルバスルーム
+
+ハーフバス：グレードを超えるハーフバス
+
+ベッドルーム：グレード以上のベッドルーム（地下のベッドルームは含まれません）
+
+キッチン：グレード以上のキッチン
+
+KitchenQual：キッチンの品質
+
+       Ex Excellent
+       グッドグッド
+       TA標準/平均
+       Fa Fair
+       悪い
+       
+TotRmsAbvGrd：グレード以上の部屋の合計（バスルームは含まれません）
+
+機能：ホーム機能（控除が保証されない限り典型的なものと想定）
+
+       典型的な典型的な機能
+       Min1マイナー控除1
+       Min2マイナー控除2
+       Mod中程度の控除
+       Maj1の主要な控除1
+       Maj2の主要な控除2
+       重大な損傷を受けたSev
+       サルサルベージのみ
+
+暖炉：暖炉の数
+
+FireplaceQu：暖炉の品質
+
+       Ex Excellent-優れた石積みの暖炉
+       Gd Good-メインレベルの石積みの暖炉
+       TA Average-メインリビングエリアのプレハブ暖炉または地下の石積み暖炉
+       Fa Fair-地下のプレハブ暖炉
+       Po Poor-ベン・フランクリン・ストーブ
+       NA暖炉なし
+
+GarageType：ガレージの場所
+
+       2種類複数の種類のガレージ
+       Attchdを自宅に接続
+       Basment Basement Garage
+       BuiltIn Built-In（家のガレージ部分-通常はガレージの上に部屋があります）
+       CarPortカーポート
+       家から取り外された
+       NAガレージ
+
+GarageYrBlt：ガレージが建設された年
+
+GarageFinish：ガレージの内部仕上げ
+
+       フィン仕上げ
+       RFnラフ仕上げ
+       未完成
+       NAガレージ
+
+GarageCars：車の容量におけるガレージのサイズ
+
+GarageArea：平方フィート単位のガレージのサイズ
+
+GarageQual：ガレージの品質
+
+       Ex Excellent
+       グッドグッド
+       TA標準/平均
+       Fa Fair
+       悪い
+       NAガレージ
+
+GarageCond：ガレージの状態
+
+       Ex Excellent
+       グッドグッド
+       TA標準/平均
+       Fa Fair
+       悪い
+       NAガレージ
+
+PavedDrive：舗装された私道
+
+       Y舗装
+       P部分舗装
+       Nダート/グラベル
+
+WoodDeckSF：平方フィートのウッドデッキエリア
+
+OpenPorchSF：平方フィートのオープンポーチエリア
+
+囲われたポーチ：平方フィートの囲われたポーチエリア
+
+3SsnPorch：平方フィートの3シーズンポーチエリア
+
+ScreenPorch：平方フィート単位のスクリーンポーチエリア
+
+PoolArea：平方フィートのプールエリア
+
+PoolQC：プールの品質
+
+       Ex Excellent
+       グッドグッド
+       TA平均/標準
+       Fa Fair
+       NAプールなし
+
+フェンス：フェンスの品質
+
+       GdPrvの良好なプライバシー
+       MnPrvの最小プライバシー
+       GdWoグッドウッド
+       MnWw最小ウッド/ワイヤー
+       NAフェンスなし
+
+その他の機能：その他の機能は他のカテゴリには含まれていません
+
+       エレベーター
+       Gar2セカンドガレージ（ガレージセクションに記載されていない場合）
+       その他
+       シェッドシェッド（100 SF以上）
+       TenCテニスコート
+       なしなし
+
+MiscVal：その他の機能の$ Value
+
+MoSold：販売月（MM）
+
+YrSold：販売年（YYYY）
+
+SaleType：販売のタイプ
+
+        WD保証証書-従来型
+        CWD保証証書-現金
+        VWD保証証書-VAローン
+        建設されたばかりの新しい家
+        COD裁判所役員証書/不動産
+        Con Contract 15％の頭金定期支払い
+        ConLw Contract低頭金および低金利
+        ConLI Contract Low Interest
+        ConLD Contract Low Down
+        その他
+
+SaleCondition：販売条件
+
+        通常通常販売
+        Abnorml Abnormal Sale-貿易、差し押さえ、空売り
+        AdjLand隣接土地購入
+        Alloca Allocation-別々の行為を持つ2つのリンクされた資産、通常はガレージユニットのあるコンドミニアム
+        家族同士のファミリーセール
+        最後の評価時に部分的な家が完成しなかった（新しい家に関連付けられている）
